@@ -28,15 +28,3 @@ Alert the number of items in an array, using the correct Array property.
 const cars = ["Volvo", "Jeep", "Mercedes"];
 alert(cars.length);
 
-///////////////////
-
-
-
-/* Exercise 3:
-Use the correct Array method to remove the last item of the fruits array.
-*/
-
-const fruits = ["Banana", "Orange", "Apple"];
-remove[2]
-
-// to fix
