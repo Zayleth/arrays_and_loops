@@ -92,7 +92,7 @@ for (let value of myArray) {
 }
 
 // Don't edit the code below here!
-const section = document.querySelector('section');
+// const section = document.querySelector('section');
 section.appendChild(list);
 
 //////////////////////////////
@@ -115,7 +115,7 @@ phonebook - contains the phonebook entries to search.
 */
 
 const name = 'Mustafa';
-const para = document.createElement('p');
+// const para = document.createElement('p');
 
 const phonebook = [
   { name : 'Chris', number : '1549' },
@@ -138,7 +138,7 @@ for (let i = 0; i < phonebook.length; i++) {
 }
 
 // Don't edit the code below here!
-const section = document.querySelector('section');
+// const section = document.querySelector('section');
 section.appendChild(para);
 
 
