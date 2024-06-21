@@ -118,3 +118,32 @@ The loop must ask for a number until either the visitor enters a number greater 
 Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
 */
 
+// ANSWER - do.. while LOOP
+do {
+    user_number = prompt("Enter a number greater than 100");
+} while (user_number <= 100)
+
+// ANSWER - while LOOP
+user_number = 0;
+while (user_number <= 100) {
+    user_number = prompt("Enter a number greater than 100");
+}
+
+
+
+
+
+// Generar números primos
+/*
+Un número entero mayor que 1se llama primo si no se puede dividir sin resto por nada excepto 1por sí mismo.
+
+En otras palabras, n > 1es primo si no se puede dividir uniformemente por nada excepto 1y n.
+
+Por ejemplo, 5es primo porque no se puede dividir sin resto entre 2, 3y 4.
+
+Escriba el código que genera números primos en el intervalo de 2a n.
+
+Porque n = 10el resultado será 2,3,5,7.
+
+PD: El código debería funcionar para cualquiera n, no estar ajustado para ningún valor fijo.
+*/
