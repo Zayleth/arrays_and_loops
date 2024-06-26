@@ -135,15 +135,25 @@ while (user_number <= 100) {
 
 // Generar números primos
 /*
-Un número entero mayor que 1se llama primo si no se puede dividir sin resto por nada excepto 1por sí mismo.
+Un número entero mayor que 1 se llama primo si no se puede dividir sin resto por nada excepto 1 por sí mismo.
 
-En otras palabras, n > 1es primo si no se puede dividir uniformemente por nada excepto 1y n.
+En otras palabras, n > 1 es primo si no se puede dividir uniformemente por nada excepto 1 y n.
 
-Por ejemplo, 5es primo porque no se puede dividir sin resto entre 2, 3y 4.
+Por ejemplo, 5 es primo porque no se puede dividir sin resto entre 2, 3 y 4.
 
-Escriba el código que genera números primos en el intervalo de 2a n.
+Escriba el código que genera números primos en el intervalo de 2 a n.
 
-Porque n = 10el resultado será 2,3,5,7.
+Porque n = 10 el resultado será 2,3,5,7.
 
 PD: El código debería funcionar para cualquiera n, no estar ajustado para ningún valor fijo.
 */
+let n = prompt("Enter a number")
+
+for (let i = 2; i <= n; i++) {
+    for (let j = 2; j <= i; j++) {
+        if (i % j === 0) {
+            continue
+        }
+    }
+    alert (i)
+}
