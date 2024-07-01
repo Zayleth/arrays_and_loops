@@ -147,13 +147,17 @@ Porque n = 10 el resultado será 2,3,5,7.
 
 PD: El código debería funcionar para cualquiera n, no estar ajustado para ningún valor fijo.
 */
-let n = prompt("Enter a number")
+let n = prompt("Enter a number:")
 
 for (let i = 2; i <= n; i++) {
     for (let j = 2; j <= i; j++) {
-        if (i % j === 0) {
-            continue
-        }
-    }
-    alert (i)
+        if (i % j === 0 || i % 1 === 0) {
+            alert (i)
+            break
+        } 
+    }  
 }
+
+
+
+
