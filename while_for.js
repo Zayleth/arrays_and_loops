@@ -133,27 +133,32 @@ while (user_number <= 100) {
 
 
 
-// Generar números primos
+// Output prime numbers
 /*
-Un número entero mayor que 1 se llama primo si no se puede dividir sin resto por nada excepto 1 por sí mismo.
+An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself.
+In other words, n > 1 is a prime if it can’t be evenly divided by anything except 1 and n.
+For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
+Write the code which outputs prime numbers in the interval from 2 to n.
+For n = 10 the result will be 2,3,5,7.
 
-En otras palabras, n > 1 es primo si no se puede dividir uniformemente por nada excepto 1 y n.
-
-Por ejemplo, 5 es primo porque no se puede dividir sin resto entre 2, 3 y 4.
-
-Escriba el código que genera números primos en el intervalo de 2 a n.
-
-Porque n = 10 el resultado será 2,3,5,7.
-
-PD: El código debería funcionar para cualquiera n, no estar ajustado para ningún valor fijo.
-*/
+P.S. The code should work for any n, not be hard-tuned for any fixed value.
 let n = prompt("Enter a number")
+*/
+
+let n = prompt("Enter a number");
 
 for (let i = 2; i <= n; i++) {
-    for (let j = 2; j <= i; j++) {
-        if (i % j === 0) {
-            continue
-        }
+  let isPrime = true;
+  for (let j = 2; j <= Math.sqrt(i); j++) { // Math.sqrt -> The loop will continue to iterate as long as the current value of j is less than or equal to the square root of i. 
+    //A number can only have divisors up to its square root.
+    if (i % j === 0) { // Ex - Number 4 -> Inner loop:j iterates from 2 to 2 (square root of 4). i is divisible by 2. Set isPrime to false. i is not prime. alert(4) is ignored
+      isPrime = false;
+
+      // Ex - Number 2 -> Inner loop: j iterates from 2 to 1.41 (square root of 2). No dividers found. i, is prime. show alert(2).
+      break;
     }
-    alert (i)
+  }
+  if (isPrime) {
+    alert(i);
+  }
 }
