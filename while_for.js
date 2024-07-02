@@ -11,17 +11,17 @@ If we don’t want to do anything in the current iteration and would like to for
 break/continue support labels before the loop. A label is the only way for break/continue to escape a nested loop to go to an outer one.
 */
 
-// Tasks
+// TASKS
 // EXERCISE 1 - Last loop value
 // What is the last value alerted by this code? Why?
 
-let i = 3;
+let z = 3;
 
-while (i) {
-  alert( i-- );
+while (z) {
+  alert( z-- );
 }
 
-// last value - 1. The condition stops when i = 0
+// last value -> 1. The condition stops when z = 0
 
 
 
